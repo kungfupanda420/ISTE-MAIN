@@ -1,0 +1,17 @@
+.page-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  .page-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .page-container p {
+    font-size: 1.25rem;
+  }
