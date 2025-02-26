@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import LoadingPage from './components/LoadingPage';
-import Page01 from './components/Page_01';
+import Page_01 from './components/Page_01';
 import './index.css';
 
 function App() {
@@ -20,11 +20,9 @@ function App() {
 
   return (
     <>
-      <div id="loading_page" className={`page ${showPage01 ? 'hidden' : ''}`}>
-        <LoadingPage />
-      </div>
-      <div id="page_01" className={`page ${showPage01 ? 'visible' : 'hidden'}`}>
-        <Page01 />
+      
+      <div id="page_01" >
+        <Page_01 />
       </div>
     </>
   );
