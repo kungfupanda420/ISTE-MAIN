@@ -8,12 +8,13 @@ body {
   font-family: Arial, sans-serif;
   background-color: white;
   color: black;
+  overflow-y: scroll; /* Ensure the body is scrollable */
 }
 
 .container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh; /* Ensure the container takes at least the full viewport height */
   overflow: hidden;
 }
 
@@ -31,20 +32,20 @@ body {
 .nav-left {
   display: flex;
   align-items: center;
+  margin-left: 2px;
 }
 
 .nav-links {
   display: flex;
   gap: 10px;
   align-items: center;
-  margin-left: 970px;
+  margin-left: 1000px;
 }
 
 .nav-button {
   background: none;
   border: none;
   cursor: pointer;
-  margin-right: 40px;
 }
 
 .nav-button img {
@@ -64,19 +65,18 @@ body {
 }
 
 .centered-image {
-  position: absolute;
-  top: 60%; /* Adjusted to move the image down */
-  left: 50%;
-  width: 90%;
+  display: block;
+  margin: 0 auto;
+  width: 98%; /* Adjust this value to decrease the distance from the sides */
   height: auto;
-  max-height: 90%;
+  max-height: 100vh; /* Adjust this value to make the image smaller */
   object-fit: cover;
-  transform: translate(-50%, -50%);
   border-radius: 30px;
+  margin-top: 100px; /* Adjust this value to move the image down */
 }
 
 .background {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -120,6 +120,15 @@ body {
 .register-btn:hover {
   background-color: white;
   color: black;
+}
+
+.astronaut {
+  position: absolute;
+  margin-top: 1200px;
+  margin-left:200px;
+  width: 100px; /* Adjust the size as needed */
+  height: auto;
+  z-index: 10;
 }
 
 @media (max-width: 768px) {

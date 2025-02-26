@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import LoadingPage from './components/LoadingPage';
-import Page_01 from './components/Page_01';
+import Page01 from './components/Page_01';
 import './index.css';
 
 function App() {
@@ -20,9 +20,9 @@ function App() {
 
   return (
     <>
-      
-      <div id="page_01" >
-        <Page_01 />
+     
+      <div>
+        <Page01 />
       </div>
     </>
   );

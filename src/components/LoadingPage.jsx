@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './LoadingPage.css';
 
 function LoadingPage() {
-    const text = "ISTE Students Chapter";
+    const text = "ISTE NITC";
     const [displayText, setDisplayText] = useState("");
     const [index, setIndex] = useState(0);
     const [isTyping, setIsTyping] = useState(true);
@@ -12,8 +12,8 @@ function LoadingPage() {
             if (index < text.length) {
                 const timeout = setTimeout(() => {
                     setDisplayText(prev => prev + text[index]); // Add one letter at a time
-                    setIndex(index + 1);
-                }, 100);
+                    setIndex(prevIndex => prevIndex + 1);
+                }, 50);
                 return () => clearTimeout(timeout);
             } else {
                 setTimeout(() => {
@@ -24,14 +24,14 @@ function LoadingPage() {
             if (index > 0) {
                 const timeout = setTimeout(() => {
                     setDisplayText(prev => prev.slice(0, -1)); // Remove one letter at a time
-                    setIndex(index - 1);
+                    setIndex(prevIndex => prevIndex - 1);
                 }, 100);
                 return () => clearTimeout(timeout);
             } else {
-                setIsTyping(true); // Start typing again
+                setIsTyping(true); // Restart typing after deleting
             }
         }
-    }, [index, isTyping, text]);
+    }, [index, isTyping]);
 
     return (
         <div className="container">
