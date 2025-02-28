@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './LoadingPage.css';
 
 function LoadingPage() {
-    const text = "ISTE NITC";
+    const text = "ISTE Students Chapter ";
     const [displayText, setDisplayText] = useState("");
     const [index, setIndex] = useState(0);
     const [isTyping, setIsTyping] = useState(true);
@@ -34,7 +34,7 @@ function LoadingPage() {
     }, [index, isTyping]);
 
     return (
-        <div className="container">
+        <div className="loading-container">
             <img src="/pictures/unsplash_FPSrDsq5i20.svg" className="background-image" alt="Background" />
             <div className="center-content">
                 <div className="image-group">
@@ -45,6 +45,7 @@ function LoadingPage() {
                 <p className="scroll-text">scroll down</p>
                 <img src="/pictures/Group 9.svg" className="scroll-icon" alt="Group 9" />
             </div>
+            <div className="extended-background"></div>
         </div>
     );
 }

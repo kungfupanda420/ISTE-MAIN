@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-      if (scrollTop > window.innerHeight * 0.5) { // Adjusted the threshold
+      if (scrollTop > window.innerHeight * 0.4) { // Adjusted the threshold to 20%
         setShowPage01(true);
       }
     };
@@ -20,10 +20,11 @@ function App() {
 
   return (
     <>
-     
-      <div>
+      {showPage01 ? (
         <Page01 />
-      </div>
+      ) : (
+        <LoadingPage />
+      )}
     </>
   );
 }

@@ -31,12 +31,34 @@ function Page_01() {
                 <button className="nav-button">
                     <img src="/pictures/Group 55.svg" alt="Button"/>
                 </button>
-                <img src="/pictures/pixelcut-export (17) 2.svg" alt='Group' className='astronaut'/>
             </div>
+
+            <div className="content">
+                <h1>Indian Society For<br />Technical Education</h1>
+               <div className='content-text'>
+               <p>Join ISTE</p>
+               <a href="#" className="register-btn">Register Now</a>
+               </div>
+            </div>
+
+            <div className="video-circle">
+                <video autoPlay loop muted>
+                    <source src="/videos/sample-video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div className="white-circle"></div>
+
+            <img src="/pictures/pixelcut-export (17) 2.svg" alt='Group' className='astronaut'/>
             <img src="/pictures/unsplash_FPSrDsq5i20.svg" className="centered-image foreground-image" alt="Unsplash" />
-            
+
+            {/* New white section */}
+            <div className="white-section">
+                <h2>Welcome to the ISTE Community</h2>
+                <p>We are glad to have you here. Explore our events, workshops, and more.</p>
+            </div>
         </div>
-    
     );
 }
 
