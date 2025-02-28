@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-      if (scrollTop > window.innerHeight * 0.4) { // Adjusted the threshold to 20%
+      if (scrollTop > window.innerHeight * 0.4) { 
         setShowPage01(true);
       }
     };

@@ -8,13 +8,13 @@ body {
   font-family: Arial, sans-serif;
   background-color: white;
   color: black;
-  overflow-y: scroll; /* Ensure the body is scrollable */
+  overflow-y: scroll; 
 }
 
 .container {
   position: relative;
   width: 100%;
-  min-height: 200vh; /* Ensure the container takes at least double the viewport height */
+  min-height: 200vh; 
   overflow: hidden;
 }
 
