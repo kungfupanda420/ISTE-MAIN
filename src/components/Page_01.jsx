@@ -44,7 +44,7 @@ function Page_01() {
 
             <div className="video-circle">
                 <video autoPlay loop muted>
-                    <source src="/pictures/earth-unscreen.mp4" type="video/mp4" />
+                    <source src="/pictures/earth.mp4" type="video/mp4" />
                     
                 </video>
             </div>
