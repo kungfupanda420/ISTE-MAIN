@@ -9,8 +9,9 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-      if (scrollTop > window.innerHeight * 0.4) { 
+      if (scrollTop > window.innerHeight * 0.2) { 
         setShowPage01(true);
+
       }
     };
 

@@ -10,7 +10,13 @@ body {
   color: black;
   overflow-y: scroll; 
 }
+.video-circle{
+  z-index: 10;
+  margin-left: 1000px;
+  size: 1000px;
+  
 
+}
 .container {
   position: relative;
   width: 100%;
@@ -51,7 +57,7 @@ body {
 .nav-button img {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+
 }
 
 .logo {
@@ -67,12 +73,12 @@ body {
 .centered-image {
   display: block;
   margin: 0 auto;
-  width: 98%; /* Adjust this value to decrease the distance from the sides */
+  width: 98%; 
   height: auto;
-  max-height: 100vh; /* Adjust this value to make the image smaller */
+  max-height: 100vh; 
   object-fit: cover;
   border-radius: 30px;
-  margin-top: 100px; /* Adjust this value to move the image down */
+  margin-top: 100px; 
 }
 
 .background {
@@ -85,28 +91,34 @@ body {
   border-radius: 50px;
 }
 
-.content {
+.content-top {
   position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translateY(-50%);
-  text-align: left;
+  top: 20%; 
+  left: 20%;
+  transform: translateX(-50%);
+  text-align: center;
   color: white;
   z-index: 10;
 }
 
-.content h1 {
+.content-top h1 {
   font-size: 2rem;
   font-weight: bold;
 }
 
-.content p {
-  font-size: 1.25rem;
-  margin: 10px 0;
+.content-middle {
+  position: absolute;
+  top: 40%; 
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 10;
 }
 
-.register {
-  margin-top: 40px; /* Move the register section down more */
+.content-middle p {
+  font-size: 1.25rem;
+  margin: 10px 0;
 }
 
 .register-btn {
@@ -115,9 +127,9 @@ body {
   padding: 10px 20px;
   font-size: 1rem;
   color: white;
-  background-color: transparent; /* Make the button transparent */
-  border: 2px solid white; /* Add a white border */
-  border-radius: 5px;
+  background-color: transparent; 
+  border: 2px solid white; 
+  border-radius: 50px;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -129,12 +141,10 @@ body {
 
 .astronaut {
   position: absolute;
- 
+  bottom: 0;
   left: 0;
-  margin-top: 700px;
-  margin-left: 300px;
-  width: 100px; /* Adjust the size as needed */
-
+  width: 100px; 
+  height: auto;
   z-index: 10;
 }
 
@@ -161,7 +171,6 @@ body {
   left: 5%;
   width: 150px;
   height: 150px;
-  margin-left: 800px;
   border-radius: 50%;
   background-color: white;
   z-index: 5;
@@ -171,7 +180,7 @@ body {
   background-color: white;
   padding: 50px;
   text-align: center;
-  margin-top: 100vh; /* Ensure the white section appears after scrolling */
+  margin-top: 100vh; 
 }
 
 .white-section h2 {
@@ -188,11 +197,11 @@ body {
     height: 70vh;
   }
 
-  .content h1 {
+  .content-top h1 {
     font-size: 1.75rem;
   }
 
-  .content p {
+  .content-middle p {
     font-size: 1rem;
   }
 

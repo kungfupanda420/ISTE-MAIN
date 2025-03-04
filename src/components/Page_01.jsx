@@ -33,22 +33,21 @@ function Page_01() {
                 </button>
             </div>
 
-            <div className="content">
+            <div className="content-top">
                 <h1>Indian Society For<br />Technical Education</h1>
-               <div className='content-text'>
-               <p>Join ISTE</p>
-               <a href="#" className="register-btn">Register Now</a>
-               </div>
+            </div>
+
+            <div className="content-middle">
+                <p>Join ISTE</p>
+                <a href="#" className="register-btn">Register Now</a>
             </div>
 
             <div className="video-circle">
                 <video autoPlay loop muted>
-                    <source src="/videos/sample-video.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
+                    <source src="/pictures/earth-unscreen.mp4" type="video/mp4" />
+                    
                 </video>
             </div>
-
-            <div className="white-circle"></div>
 
             <img src="/pictures/pixelcut-export (17) 2.svg" alt='Group' className='astronaut'/>
             <img src="/pictures/unsplash_FPSrDsq5i20.svg" className="centered-image foreground-image" alt="Unsplash" />
